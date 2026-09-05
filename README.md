@@ -1,42 +1,48 @@
-# Dasar_Pemrograman - C Language
+# 💻 Dasar Pemrograman dengan C
 
-A comprehensive repository dedicated to C programming language materials, fundamental concepts, and practical exercises. This repository is designed to structured documentation for learning programming logic from scratch using C.
+![Language](https://img.shields.io/badge/Language-C-blue.svg)
+![Compiler](https://img.shields.io/badge/Compiler-GCC-orange.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
 
+Repositori ini berisi catatan materi, studi kasus, dan implementasi kode praktikum **Dasar Pemrograman** menggunakan bahasa C. Disusun secara berurutan mulai dari konsep dasar sekuensial hingga manipulasi tipe data terstruktur (*struct*).
 
-## 🚀 Table of Contents
-- [About the Repository](#-about-the-repository)
-- [Key Topics Covered](#%EF%B8%8F-key-topics-covered)
-- [Getting Started](#-getting-started)
-- [Tools Used](#%EF%B8%8F-tools-used)
+---
 
-## 📌 About the Repository
-Repositori ini dibuat untuk menyimpan seluruh materi, catatan, dan latihan kode dalam mempelajari dasar-dasar pemrograman menggunakan **Bahasa C**. Fokus utama dari materi di sini adalah penguatan logika pemrograman, pemahaman sintaksis, serta penyelesaian masalah (*problem-solving*).
+## 📚 Daftar Modul
 
-Target dari repositori ini meliputi:
-* Memahami konsep dasar pemrograman (*variable, data types, operator*).
-* Menguasai kontrol alur program (*conditionals & loops*).
-* Menerapkan struktur data dasar (*array, struct*).
+| No | Direktori | Materi Pokok | Cakupan Bahasan |
+|:---:|:---|:---|:---|
+| **01** | `01_Tipe_Data_Penamaan_dan_Sekuens/` | **Tipe Data & Sekuens** | Tipe data primitif, aturan penamaan variabel/konstanta, I/O (`printf`, `scanf`), alur sekuensial |
+| **02** | `02_Pemilihan/` | **Percabangan** | Logika kontrol keputusan: `if`, `if-else`, *nested if*, dan `switch-case` |
+| **03** | `03_Perulangan/` | **Perulangan (*Looping*)** | Struktur perulangan terhitung dan kondisional: `for`, `while`, `do-while`, serta *nested loop* |
+| **04** | `04_Prosedur/` | **Prosedur & Pointer** | Fungsi `void`, parameter formal/aktual, *scope*, konsep pointer, *pass by value* vs *pass by reference* |
+| **05** | `05_Fungsi/` | **Fungsi (*Function*)** | Subprogram dengan nilai kembalian (*return value*) dan rekursi dasar |
+| **06** | `06_Array/` | **Array 1 Dimensi** | Alokasi memori larik, inisialisasi, traversal, serta operasi manipulasi data |
+| **07** | `07_Record/` | **Struktur Data (*Struct*)** | Tipe data bentukan, deklarasi `struct`, `typedef`, dan pengaksesan *member*/*field* |
+| **08** | `08_Array_Of_Record/` | **Array of Struct** | Pengelolaan kumpulan entitas terstruktur untuk pemrosesan data tabel/rekaman |
 
+---
 
-## 🛠️ Key Topics Covered
-Berikut adalah materi yang dipelajari dan tersedia di dalam repositori ini:
+## 📂 Struktur Repositori
 
-1. **Introduction & Syntax**: Struktur dasar kode C, fungsi `main()`, `printf()`, dan `scanf()`.
-2. **Variables & Data Types**: Integer, Float, Char, Double, beserta format specifier-nya.
-3. **Operators**: Arithmetics, Logical, Relational, dan Assignment operators.
-4. **Control Structures**: 
-   * Conditionals (`if`, `else if`, `else`, `switch case`).
-   * Loops (`for`, `while`, `do-while`).
-5. **Data Structures**: Array (1D & 2D) dan Pengenalan String.
-6. **Functions**: Pembuatan fungsi buatan sendiri (*user-defined functions*), parameter, dan *return value*.
+```text
+DasarPemrograman-C/
+├── 01_Tipe_Data_Penamaan_dan_Sekuens/
+├── 02_Pemilihan/
+├── 03_Perulangan/
+├── 04_Prosedur/
+├── 05_Fungsi/
+├── 06_Array/
+├── 07_Record/
+├── 08_Array_Of_Record/
+└── README.md
 
-
-## 💻 Getting Started
-
-### Prerequisites
-Untuk menjalankan kode-kode di repositori ini, pastikan Anda sudah menginstal C Compiler di perangkat Anda (seperti **GCC** via MinGW untuk Windows, atau Clang untuk macOS).
-
-### Running the Code via Terminal
-1. Clone repositori ini ke komputer Anda:
-   ```bash
-   git clone [https://github.com/dicerds/Dasar_Pemrograman.git](https://github.com/dicerds/Dasar_Pemrograman.git)
+## 🚀 Cara Jalankan
+ 
+Pastikan sudah ada **GCC** di sistem kamu, lalu:
+ 
+```bash
+cd 04_Pemilihan
+gcc main.c -o main
+./main
+```
